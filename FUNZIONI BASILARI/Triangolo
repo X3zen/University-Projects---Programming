@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+#define formu 2                   //dichiarazione di una costante
+int main () {
+
+    float base;                   //dichiarazione di variabile con virgola
+    float altezza;
+    float arearet;
+    float areacerc;
+    float raggio;
+    const float PI = 3.14;         //dichiarazione di costante
+
+    printf("benvenuto in questo calcolatore di Aree di rettangolo e cerchio.\n Per iniziare inserisci la base del rettangolo: ");
+    scanf("%f", &base);
+
+    printf("\n adesso inserisci l'altezza del rettangolo: \n");
+    scanf("%f", &altezza);
+
+    printf("\n adesso immetti il raggio del cerchio: \n");
+    scanf("%f", &raggio);
+
+    arearet = (base * altezza) / formu;
+    areacerc = PI * (raggio*raggio);
+
+    printf("l'area del rettangolo e' %f e l'area del cerchio e' %f", arearet, areacerc);
+
+    return 0;
+}
